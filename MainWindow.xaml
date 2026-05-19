@@ -1,0 +1,42 @@
+﻿<Window x:Class="PR17_romanov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR17_romanov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="137*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Width="78" Grid.ColumnSpan="2" Margin="357,0">
+            <Menu HorizontalAlignment="Center" Height="62" VerticalAlignment="Top" Width="72">
+                <MenuItem Header="Задание 1" Click="Task1_Click"/>
+                <MenuItem Header="Задание 2" Click="Task2_Click"/>
+                <Separator/>
+                <MenuItem Header="Выход" Click="Exit_Click" Width="72"/>
+            </Menu>
+        </StackPanel>
+
+        <StackPanel x:Name="Task1_Panel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Width="318" Grid.ColumnSpan="2" Margin="242,100,232,0" Visibility="Hidden">
+            <Label Content="Задание 1" Background="ForestGreen" FontSize="20" HorizontalAlignment="Center" Foreground="White" Height="40" Width="318"/>
+            <TextBox x:Name="txtFromFile" IsReadOnly="True" FontSize="20" Height="85" TextWrapping="Wrap" Background="LightGray"/>
+            <TextBox x:Name="txtInputWord" ToolTip="Введите слово, которое хотите найти" FontSize="20" Height="30" TextWrapping="Wrap" Background="LightGray"/>
+            <TextBox x:Name="txtResult" ToolTip="Результат" FontSize="20" Height="30" TextWrapping="Wrap" Background="LightGray" IsReadOnly="True"/>
+            
+            <Button Content="Поиск" FontSize="16" Foreground="White" Click="Button_Click" Background="Green" Height="30"/>
+        </StackPanel>
+
+        <StackPanel x:Name="Task2_Panel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Width="318" Grid.ColumnSpan="2" Margin="242,100,232,0" Visibility="Hidden">
+            <Label Content="Задание 2" Background="ForestGreen" FontSize="20" HorizontalAlignment="Center" Foreground="White" Height="40" Width="318"/>
+            <TextBox x:Name="txtInputWord2" ToolTip="Введите строку, которая содержит '/'" FontSize="20" Height="30" TextWrapping="Wrap" Background="LightGray"/>
+            <TextBox x:Name="txtResult2" ToolTip="Результат" FontSize="20" Height="30" TextWrapping="Wrap" Background="LightGray" IsReadOnly="True"/>
+            <TextBox x:Name="txtResult3" ToolTip="Результат" FontSize="20" Height="30" TextWrapping="Wrap" Background="LightGray" IsReadOnly="True"/>
+            <TextBox x:Name="txtResult4" ToolTip="Результат" FontSize="20" Height="30" TextWrapping="Wrap" Background="LightGray" IsReadOnly="True"/>
+            <Button Content="Начать" FontSize="16" Foreground="White" Click="Button_Click_1" Background="Green" Height="30"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov.csproj.AssemblyReference.cache
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\MainWindow.g.cs
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\App.g.cs
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov_MarkupCompile.cache
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov_MarkupCompile.lref
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\bin\Debug\PR17_romanov.exe.config
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\bin\Debug\PR17_romanov.exe
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\bin\Debug\PR17_romanov.pdb
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\MainWindow.baml
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov.g.resources
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov.Properties.Resources.resources
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov.csproj.GenerateResource.cache
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov.csproj.CoreCompileInputs.cache
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov.exe
+C:\Users\305-7\Desktop\Романов ПР-21\PR17_romanov\obj\Debug\PR17_romanov.pdb
