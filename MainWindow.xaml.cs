@@ -27,14 +27,10 @@ namespace PR17_romanov
         
         public MainWindow()
         {
-            InitializeComponent();
-            
-            
-
-            
+            InitializeComponent(); 
         }
 
-        private void Task1_Click(object sender, RoutedEventArgs e)
+        private void Task1_Click(object sender, RoutedEventArgs e) // кнопка задание 1
         {
             if (Task2_Panel.Visibility == Visibility.Visible)
             {
@@ -49,7 +45,7 @@ namespace PR17_romanov
             txtFromFile.Text = txt;
         }
 
-        private void Task2_Click(object sender, RoutedEventArgs e)
+        private void Task2_Click(object sender, RoutedEventArgs e)  // кнопка задание 2
         {
             if (Task1_Panel.Visibility == Visibility.Visible)
             {
@@ -59,7 +55,7 @@ namespace PR17_romanov
 
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)  // кнопка выход
         {
             this.Close();
         }
@@ -79,11 +75,6 @@ namespace PR17_romanov
 
         private void Button_Click_1(object sender, RoutedEventArgs e) // Кнопка Начать
         {
-            
-            
-            
-            bool foundSlash = false;
-
             if (!string.IsNullOrWhiteSpace(txtInputWord2.Text))
             {
                 string[] lineArray = txtInputWord2.Text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
