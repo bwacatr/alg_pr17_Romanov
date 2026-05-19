@@ -67,7 +67,7 @@ namespace PR17_romanov
                 if (!string.IsNullOrWhiteSpace(txtInputWord.Text))
                 {
                     string inputWord = txtInputWord.Text;
-                    var result = from word in txtArray where word.ToLower() == inputWord.ToLower() select word;
+                    var result = from word in txtArray where word.ToLower() == inputWord.ToLower() select word; //сравнивает введенное слово со словом из массива и возвращает совпадение
                     txtResult.Text = $"Кол-во слов: {result.Count()}";
                 }
             }
@@ -79,37 +79,37 @@ namespace PR17_romanov
             {
                 string[] lineArray = txtInputWord2.Text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
 
-                var Digits = from symbol in txtInputWord2.Text where char.IsDigit(symbol) select symbol;
+                var Digits = from symbol in txtInputWord2.Text where char.IsDigit(symbol) select symbol; //возвращает цифры из txtInputWord2.Text
 
-                var beforeSlash = txtInputWord2.Text.TakeWhile(x => x != '/');
+                var beforeSlash = txtInputWord2.Text.TakeWhile(x => x != '/'); //Возвращает символы до /
 
-                var afterSlash = txtInputWord2.Text.SkipWhile(x => x != '/').Skip(1);
+                var afterSlash = txtInputWord2.Text.SkipWhile(x => x != '/').Skip(1); //Возвращает символы после /
 
                 string lineAfterSlash = "";
 
                 string lineBeforeSlash = "";
 
-                foreach (char item in afterSlash)
+                foreach (char item in afterSlash)       //Собирает строку из символов после /
                 {
                     if (char.IsLower(item))
                     {
                         lineAfterSlash += char.ToUpper(item);
                     }
-                    else
+                    else                                        //Изменяет регистр символа
                     {
                         lineAfterSlash += char.ToLower(item);
                     }
                 }
 
-                foreach (char item in beforeSlash)
+                foreach (char item in beforeSlash) //Собирает строку из символов до /
                 {
                     lineBeforeSlash += item;
                 }
 
                 string[] afterSlashArray = lineAfterSlash.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-                string[] beforeSlashArray = lineBeforeSlash.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                string[] beforeSlashArray = lineBeforeSlash.Split(separators, StringSplitOptions.RemoveEmptyEntries); // разделяет слова, используя массив символов separators и ложит их в массив
 
-                string[] fullArray = beforeSlashArray.Concat(afterSlashArray).ToArray();
+                string[] fullArray = beforeSlashArray.Concat(afterSlashArray).ToArray(); // соединяет оба массива
 
                 txtResult2.Text = $"Кол-во цифр: {Digits.Count()}";
                 txtResult3.Text = $"До '/': {string.Join(" ",beforeSlashArray)}";
